@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.frameworks          = [ 'Foundation', 'UIKit', 'QuartzCore', 'CoreGraphics', 'CoreAudio', 'CoreMedia', 'AudioToolbox', 'AVFoundation', 'MediaPlayer' ]
 
   s.dependency          'AFNetworking', '~> 2.5'
-  s.dependency          'VideoCore', '~> 0.3'
+  s.dependency          'VideoCore', :git => 'https://github.com/mparoni55/VideoCore.git' #'VideoCore', '~> 0.3'
 
   # propagated from VideoCore
   s.xcconfig            = { "HEADER_SEARCH_PATHS" => "${PODS_ROOT}/boost" }
